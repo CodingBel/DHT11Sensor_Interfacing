@@ -1,0 +1,740 @@
+MPLINK 4.33, Linker
+Linker Map File - Created Wed Dec 15 16:55:46 2021
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+                   .cinit    romdata   0x00002a    program   0x000002
+          .code_process.o       code   0x00002c    program   0x000776
+           .code_config.o       code   0x0007a2    program   0x000194
+             .code_main.o       code   0x000936    program   0x0000ea
+         .code_openxlcd.o       code   0x000a20    program   0x0000de
+               _cinit_scn       code   0x000afe    program   0x00009e
+         .code_setddram.o       code   0x000b9c    program   0x000052
+         .code_setcgram.o       code   0x000bee    program   0x000052
+         .code_putrxlcd.o       code   0x000c40    program   0x000052
+             .stringtable    romdata   0x000c92    program   0x000050
+         .code_writdata.o       code   0x000ce2    program   0x00004e
+         .code_wcmdxlcd.o       code   0x000d30    program   0x00004e
+         .code_putsxlcd.o       code   0x000d7e    program   0x00004e
+         .code_readdata.o       code   0x000dcc    program   0x000046
+         .code_readaddr.o       code   0x000e12    program   0x000046
+         .code_busyxlcd.o       code   0x000e58    program   0x00003e
+             D10KTCYXCODE       code   0x000e96    program   0x00002e
+              D1KTCYXCODE       code   0x000ec4    program   0x000020
+             _startup_scn       code   0x000ee4    program   0x00001c
+         .code_fxd0808u.o       code   0x000f00    program   0x00001c
+              D10TCYXCODE       code   0x000f1c    program   0x000016
+                    .code       code   0x000f32    program   0x00000e
+           .code___init.o       code   0x000f40    program   0x000002
+        .idata_config.o_i    romdata   0x000f42    program   0x000000
+      .idata_setddram.o_i    romdata   0x000f42    program   0x000000
+      .romdata_setddram.o    romdata   0x000f42    program   0x000000
+      .idata_wcmdxlcd.o_i    romdata   0x000f42    program   0x000000
+      .romdata_wcmdxlcd.o    romdata   0x000f42    program   0x000000
+            .code_c018i.o       code   0x000f42    program   0x000000
+      .idata_writdata.o_i    romdata   0x000f42    program   0x000000
+      .romdata_writdata.o    romdata   0x000f42    program   0x000000
+         .romdata_c018i.o    romdata   0x000f42    program   0x000000
+      .idata_fxd0808u.o_i    romdata   0x000f42    program   0x000000
+      .romdata_fxd0808u.o    romdata   0x000f42    program   0x000000
+        .idata___init.o_i    romdata   0x000f42    program   0x000000
+        .romdata___init.o    romdata   0x000f42    program   0x000000
+         .idata_c018i.o_i    romdata   0x000f42    program   0x000000
+          .romdata_main.o    romdata   0x000f42    program   0x000000
+          .idata_main.o_i    romdata   0x000f42    program   0x000000
+      .idata_busyxlcd.o_i    romdata   0x000f42    program   0x000000
+      .romdata_busyxlcd.o    romdata   0x000f42    program   0x000000
+      .idata_openxlcd.o_i    romdata   0x000f42    program   0x000000
+      .romdata_openxlcd.o    romdata   0x000f42    program   0x000000
+       .romdata_process.o    romdata   0x000f42    program   0x000000
+      .idata_putrxlcd.o_i    romdata   0x000f42    program   0x000000
+      .romdata_putrxlcd.o    romdata   0x000f42    program   0x000000
+       .idata_process.o_i    romdata   0x000f42    program   0x000000
+      .idata_putsxlcd.o_i    romdata   0x000f42    program   0x000000
+      .romdata_putsxlcd.o    romdata   0x000f42    program   0x000000
+        .romdata_config.o    romdata   0x000f42    program   0x000000
+      .idata_readaddr.o_i    romdata   0x000f42    program   0x000000
+      .romdata_readaddr.o    romdata   0x000f42    program   0x000000
+      .idata_readdata.o_i    romdata   0x000f42    program   0x000000
+      .romdata_readdata.o    romdata   0x000f42    program   0x000000
+      .idata_setcgram.o_i    romdata   0x000f42    program   0x000000
+      .romdata_setcgram.o    romdata   0x000f42    program   0x000000
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x000010
+                 .tmpdata      udata   0x000010       data   0x000002
+                DELAYDAT2      udata   0x000012       data   0x000001
+                DELAYDAT1      udata   0x000013       data   0x000001
+           .udata_c018i.o      udata   0x000080       data   0x00000a
+        .udata_readdata.o      udata   0x00008a       data   0x000000
+        .idata_readdata.o      idata   0x00008a       data   0x000000
+        .udata_setcgram.o      udata   0x00008a       data   0x000000
+        .idata_setcgram.o      idata   0x00008a       data   0x000000
+        .udata_setddram.o      udata   0x00008a       data   0x000000
+        .idata_setddram.o      idata   0x00008a       data   0x000000
+        .udata_wcmdxlcd.o      udata   0x00008a       data   0x000000
+        .idata_wcmdxlcd.o      idata   0x00008a       data   0x000000
+        .udata_writdata.o      udata   0x00008a       data   0x000000
+        .idata_writdata.o      idata   0x00008a       data   0x000000
+        .udata_fxd0808u.o      udata   0x00008a       data   0x000000
+        .idata_fxd0808u.o      idata   0x00008a       data   0x000000
+          .udata___init.o      udata   0x00008a       data   0x000000
+          .idata___init.o      idata   0x00008a       data   0x000000
+           .idata_c018i.o      idata   0x00008a       data   0x000000
+          .udata_config.o      udata   0x00008a       data   0x000000
+          .idata_config.o      idata   0x00008a       data   0x000000
+         .udata_process.o      udata   0x00008a       data   0x000000
+         .idata_process.o      idata   0x00008a       data   0x000000
+            .udata_main.o      udata   0x00008a       data   0x000000
+            .idata_main.o      idata   0x00008a       data   0x000000
+        .udata_busyxlcd.o      udata   0x00008a       data   0x000000
+        .idata_busyxlcd.o      idata   0x00008a       data   0x000000
+        .udata_openxlcd.o      udata   0x00008a       data   0x000000
+        .idata_openxlcd.o      idata   0x00008a       data   0x000000
+        .udata_putrxlcd.o      udata   0x00008a       data   0x000000
+        .idata_putrxlcd.o      idata   0x00008a       data   0x000000
+        .udata_putsxlcd.o      udata   0x00008a       data   0x000000
+        .idata_putsxlcd.o      idata   0x00008a       data   0x000000
+        .udata_readaddr.o      udata   0x00008a       data   0x000000
+        .idata_readaddr.o      idata   0x00008a       data   0x000000
+                   .stack      udata   0x000500       data   0x000100
+            SFR_UNBANKED0      udata   0x000f80       data   0x000080
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x00002a    0x000f41      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+                            0x300006    0x300006      
+            3873 out of 33048 program addresses used, program memory utilization is 11%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 BusyXLCD   0x000e58    program     extern C:\MCC18\src\extended\pmc\XLCD\busyxlcd.c
+             Check_Parity   0x00015a    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                   D10K_1   0x000ea2    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x000eae    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x000ea0    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10_1   0x000f2c    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+                     D10x   0x000f24    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+                    D1K_1   0x000ed0    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000ece    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+               DHT11_Read   0x0000be    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+           DHT11_Response   0x00008e    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+              DHT11_Start   0x000070    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+             Delay10KTCYx   0x000e96    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
+              Delay10TCYx   0x000f1c    program     extern C:\MCC18\src\traditional\delays\d10tcyx.asm
+              Delay1KTCYx   0x000ec4    program     extern C:\MCC18\src\traditional\delays\d1ktcyx.asm
+            DelayFor18TCY   0x00002c    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+             DelayPORXLCD   0x000038    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                DelayXLCD   0x000044    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+          DisplayHumidity   0x000652    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+              DisplayTemp   0x00056a    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                 FXD0808U   0x000f00    program     extern C:\MCC18\src\traditional\math\fxd0808u.c
+          Humidity_Serial   0x0001a0    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                 LCD_Init   0x0007ac    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+                LCD_Stuff   0x0007f4    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+                 OpenXLCD   0x000a20    program     extern C:\MCC18\src\extended\pmc\XLCD\openxlcd.c
+              ParityError   0x0003a8    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+             Parity_Error   0x00071a    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                Port_Init   0x0007a2    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+             ReadAddrXLCD   0x000e12    program     extern C:\MCC18\src\extended\pmc\XLCD\readaddr.c
+             ReadDataXLCD   0x000dcc    program     extern C:\MCC18\src\extended\pmc\XLCD\readdata.c
+       SensorUnresponsive   0x00047a    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+      Sensor_Unresponsive   0x00075e    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+               SerialInit   0x000924    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+             SetCGRamAddr   0x000bee    program     extern C:\MCC18\src\extended\pmc\XLCD\setcgram.c
+             SetDDRamAddr   0x000b9c    program     extern C:\MCC18\src\extended\pmc\XLCD\setddram.c
+              Temp_Serial   0x0002a4    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+             WriteCmdXLCD   0x000d30    program     extern C:\MCC18\src\extended\pmc\XLCD\wcmdxlcd.c
+            WriteDataXLCD   0x000ce2    program     extern C:\MCC18\src\extended\pmc\XLCD\writdata.c
+       _D10KTCYXCODE_0010   0x000ea6    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x000eb2    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+        _D10TCYXCODE_000A   0x000f26    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x000f28    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x000f2a    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D1KTCYXCODE_0010   0x000ed4    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x000eda    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+         ___else_lbl00018   0x00010e    program     static                          
+          ___for_lbl00009   0x000138    program     static                          
+          ___for_lbl00010   0x00013c    program     static                          
+          ___for_lbl00019   0x0000d4    program     static                          
+           ___if_lbl00013   0x0000ec    program     static                          
+           ___if_lbl00016   0x000134    program     static                          
+           ___if_lbl00017   0x000138    program     static                          
+       ___return_lbl00000   0x000f1a    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x000efe    program     static                          
+       ___return_lbl00002   0x000b9a    program     static                          
+       ___return_lbl00008   0x000142    program     static                          
+        ___while_lbl00011   0x0000da    program     static                          
+        ___while_lbl00012   0x0000f0    program     static                          
+        ___while_lbl00014   0x000122    program     static                          
+        ___while_lbl00015   0x000138    program     static                          
+               __config_0   0x300001    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+               __config_1   0x300003    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+               __config_2   0x300006    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+                   __init   0x000f40    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+               __string_0   0x000caa    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_1   0x000ca2    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_2   0x000ce0    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+               __string_2   0x000ca0    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_3   0x000cd1    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+               __string_3   0x000c9c    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_4   0x000c94    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_4   0x000cbc    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+               __string_5   0x000c92    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+            __zero_memory   0x000f32    program     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                _do_cinit   0x000afe    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                 _startup   0x000ee4    program     extern C:\MCC18\src\traditional\startup\c018i.c
+               clear_loop   0x000f38    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                copy_loop   0x000b70    program     static                          
+            copy_one_byte   0x000b76    program     static                          
+                     done   0x000b9a    program     static                          
+             done_copying   0x000b84    program     static                          
+                  endloop   0x000f16    program     static                          
+                     loop   0x000ef4    program     static                          
+                     loop   0x000f08    program     static                          
+                     main   0x000936    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+                putrsXLCD   0x000c40    program     extern C:\MCC18\src\extended\pmc\XLCD\putrxlcd.c
+                 putsXLCD   0x000d7e    program     extern C:\MCC18\src\extended\pmc\XLCD\putsxlcd.c
+                 serialTx   0x000050    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                     test   0x000b18    program     static                          
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+            DelayCounter1   0x000013       data     extern C:\MCC18\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x000012       data     extern C:\MCC18\src\traditional\delays\delayd2.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PWM1CON   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              PWM1CONbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     SIGN   0x00000e       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                        W   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB7   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __BARGB0   0x00000c       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB1   0x00000b       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB2   0x00000a       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB3   0x000009       data     extern C:\MCC18\src\traditional\math\barg.asm
+                   __BEXP   0x00000d       data     extern C:\MCC18\src\traditional\math\barg.asm
+                __FPFLAGS   0x00000f       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000f       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB3   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __tmp_0   0x000010       data     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+                  __tmp_0   0x000010       data     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                curr_byte   0x000083       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x000085       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 data_ptr   0x000087       data     static C:\MCC18\src\traditional\startup\c018i.c
+                     prom   0x000080       data     static C:\MCC18\src\traditional\startup\c018i.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+            DelayFor18TCY   0x00002c    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+             DelayPORXLCD   0x000038    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                DelayXLCD   0x000044    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                 serialTx   0x000050    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+              DHT11_Start   0x000070    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+           DHT11_Response   0x00008e    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+               DHT11_Read   0x0000be    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+          ___for_lbl00019   0x0000d4    program     static                          
+        ___while_lbl00011   0x0000da    program     static                          
+           ___if_lbl00013   0x0000ec    program     static                          
+        ___while_lbl00012   0x0000f0    program     static                          
+         ___else_lbl00018   0x00010e    program     static                          
+        ___while_lbl00014   0x000122    program     static                          
+           ___if_lbl00016   0x000134    program     static                          
+           ___if_lbl00017   0x000138    program     static                          
+        ___while_lbl00015   0x000138    program     static                          
+          ___for_lbl00009   0x000138    program     static                          
+          ___for_lbl00010   0x00013c    program     static                          
+       ___return_lbl00008   0x000142    program     static                          
+             Check_Parity   0x00015a    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+          Humidity_Serial   0x0001a0    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+              Temp_Serial   0x0002a4    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+              ParityError   0x0003a8    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+       SensorUnresponsive   0x00047a    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+              DisplayTemp   0x00056a    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+          DisplayHumidity   0x000652    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+             Parity_Error   0x00071a    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+      Sensor_Unresponsive   0x00075e    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+                Port_Init   0x0007a2    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+                 LCD_Init   0x0007ac    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+                LCD_Stuff   0x0007f4    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               SerialInit   0x000924    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+                     main   0x000936    program     extern E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+                 OpenXLCD   0x000a20    program     extern C:\MCC18\src\extended\pmc\XLCD\openxlcd.c
+                _do_cinit   0x000afe    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     test   0x000b18    program     static                          
+                copy_loop   0x000b70    program     static                          
+            copy_one_byte   0x000b76    program     static                          
+             done_copying   0x000b84    program     static                          
+                     done   0x000b9a    program     static                          
+       ___return_lbl00002   0x000b9a    program     static                          
+             SetDDRamAddr   0x000b9c    program     extern C:\MCC18\src\extended\pmc\XLCD\setddram.c
+             SetCGRamAddr   0x000bee    program     extern C:\MCC18\src\extended\pmc\XLCD\setcgram.c
+                putrsXLCD   0x000c40    program     extern C:\MCC18\src\extended\pmc\XLCD\putrxlcd.c
+               __string_5   0x000c92    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_4   0x000c94    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_3   0x000c9c    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_2   0x000ca0    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_1   0x000ca2    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_0   0x000caa    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\config.c
+               __string_4   0x000cbc    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+               __string_3   0x000cd1    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+               __string_2   0x000ce0    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+            WriteDataXLCD   0x000ce2    program     extern C:\MCC18\src\extended\pmc\XLCD\writdata.c
+             WriteCmdXLCD   0x000d30    program     extern C:\MCC18\src\extended\pmc\XLCD\wcmdxlcd.c
+                 putsXLCD   0x000d7e    program     extern C:\MCC18\src\extended\pmc\XLCD\putsxlcd.c
+             ReadDataXLCD   0x000dcc    program     extern C:\MCC18\src\extended\pmc\XLCD\readdata.c
+             ReadAddrXLCD   0x000e12    program     extern C:\MCC18\src\extended\pmc\XLCD\readaddr.c
+                 BusyXLCD   0x000e58    program     extern C:\MCC18\src\extended\pmc\XLCD\busyxlcd.c
+             Delay10KTCYx   0x000e96    program     extern C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x000ea0    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x000ea2    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x000ea6    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x000eae    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x000eb2    program     static C:\MCC18\src\traditional\delays\d10ktcyx.asm
+              Delay1KTCYx   0x000ec4    program     extern C:\MCC18\src\traditional\delays\d1ktcyx.asm
+                     D1Kx   0x000ece    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+                    D1K_1   0x000ed0    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0010   0x000ed4    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+        _D1KTCYXCODE_0016   0x000eda    program     static C:\MCC18\src\traditional\delays\d1ktcyx.asm
+                 _startup   0x000ee4    program     extern C:\MCC18\src\traditional\startup\c018i.c
+                     loop   0x000ef4    program     static                          
+       ___return_lbl00001   0x000efe    program     static                          
+                 FXD0808U   0x000f00    program     extern C:\MCC18\src\traditional\math\fxd0808u.c
+                     loop   0x000f08    program     static                          
+                  endloop   0x000f16    program     static                          
+       ___return_lbl00000   0x000f1a    program     static                          
+              Delay10TCYx   0x000f1c    program     extern C:\MCC18\src\traditional\delays\d10tcyx.asm
+                     D10x   0x000f24    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000A   0x000f26    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000C   0x000f28    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+        _D10TCYXCODE_000E   0x000f2a    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+                    D10_1   0x000f2c    program     static C:\MCC18\src\traditional\delays\d10tcyx.asm
+            __zero_memory   0x000f32    program     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               clear_loop   0x000f38    program     static C:\MCC18\src\traditional\proc\p18F4520.asm
+                   __init   0x000f40    program     extern C:\MCC18\src\traditional\stdclib\__init.c
+               __config_0   0x300001    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+               __config_1   0x300003    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+               __config_2   0x300006    program     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+                 __AARGB7   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB3   0x000000       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                  __REMB0   0x000003       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __AARGB0   0x000007       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern C:\MCC18\src\traditional\math\aarg.asm
+                 __BARGB3   0x000009       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB2   0x00000a       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB1   0x00000b       data     extern C:\MCC18\src\traditional\math\barg.asm
+                 __BARGB0   0x00000c       data     extern C:\MCC18\src\traditional\math\barg.asm
+                   __BEXP   0x00000d       data     extern C:\MCC18\src\traditional\math\barg.asm
+                     SIGN   0x00000e       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x00000f       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000f       data     extern C:\MCC18\src\traditional\math\cmath18.asm
+                  __tmp_0   0x000010       data     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\main.c
+                  __tmp_0   0x000010       data     static E:\WorkMplabProjects\DHT11 LCD Interfacing\DHT11_Interfacing\process.c
+            DelayCounter2   0x000012       data     extern C:\MCC18\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x000013       data     extern C:\MCC18\src\traditional\delays\delayd1.asm
+                     prom   0x000080       data     static C:\MCC18\src\traditional\startup\c018i.c
+                curr_byte   0x000083       data     static C:\MCC18\src\traditional\startup\c018i.c
+               curr_entry   0x000085       data     static C:\MCC18\src\traditional\startup\c018i.c
+                 data_ptr   0x000087       data     static C:\MCC18\src\traditional\startup\c018i.c
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   EEDATA   0x000fa8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    EEADR   0x000fa9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                RCSTAbits   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    RCSTA   0x000fab       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                TXSTAbits   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TXSTA   0x000fac       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TXREG   0x000fad       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    RCREG   0x000fae       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    SPBRG   0x000faf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SPBRGH   0x000fb0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T3CON   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T3CONbits   0x000fb1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR3L   0x000fb2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR3H   0x000fb3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                CMCONbits   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CMCON   0x000fb4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CVRCON   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               CVRCONbits   0x000fb5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  ECCP1AS   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              ECCP1ASbits   0x000fb6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              PWM1CONbits   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PWM1CON   0x000fb7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              BAUDCTLbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  BAUDCTL   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              BAUDCONbits   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  BAUDCON   0x000fb8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              CCP2CONbits   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  CCP2CON   0x000fba       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CCPR2   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR2L   0x000fbb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR2H   0x000fbc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              CCP1CONbits   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  CCP1CON   0x000fbd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    CCPR1   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR1L   0x000fbe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   CCPR1H   0x000fbf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON2   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON2bits   0x000fc0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   WDTCON   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               WDTCONbits   0x000fd1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               LVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   LVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              HLVDCONbits   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  HLVDCON   0x000fd2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                        W   0x000fe8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\traditional\proc\p18F4520.asm
+
+
